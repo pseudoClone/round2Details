@@ -1,0 +1,4 @@
+# Question Answer Description
+1. Initialized Git Repository and pushed to Github and used [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+2. Created 2 branches. [Main](https://github.com/pseudoClone/round2Details/tree/main) is for main image builds and [develop](https://github.com/pseudoClone/round2Details/tree/develop) is for active development for teams. [Feature](https://github.com/pseudoClone/round2Details/tree/feature) is for keeping approved features from the team. For this scenario, it was done by a simple `git cherry-pick <hash>` from the develop branch. `git cherry-pick cb6726` was done and `cb6726` hash was found from `git log --oneline`
+3. 

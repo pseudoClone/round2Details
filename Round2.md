@@ -27,6 +27,10 @@ EOFError: EOF when reading a line
 
 This is due to the fact that the script run and expects and input at runtime. For our case, we can avoid this by using environment variables to get the input from command line itself. However, since the container does start, we will ignore this since, the application logic is out of the scope.
 
-6. For question 6, the [docker-compose.yml](.\docker-compose.yml) has a compose configuration for a three tier application with a backend and a frontend and a Postgres database using the Postgres image; Alpine based. With this the size is reduced and the application is good to go.
+6. For question 6, the [docker-compose.yml](./docker-compose.yml) has a compose configuration for a three tier application with a backend and a frontend and a Postgres database using the Postgres image; Alpine based. With this the size is reduced and the application is good to go.
 
-7. For question 7, I have made a simple C++ application which logs this out: "Hello, this is a test for CI workflow". The CI will build the application and check if the output is correct. Here grep is used to check the redirected output of the program in a file.
+7. For question 7, I have made a simple C++ application which logs this out: "Hello, this is a test for CI workflow". The CI will build the application and check if the output is correct. Here grep is used to check the redirected output of the program in a file. Details at: [CI FILE](./.github/workflows/ci.yml)
+
+8. For this question, we will make a bash script that automatically run the build and test commands. We first make use of the shebang to tell that we will used bash as opposed to sh because bash has bashisms which might always come in handy and then we will clone a repo from Github to build it and test if the output is correct
+
+9. We will create a .env file to keep our secrets and we will use python-dotenv to access it securely and validate some responses. For more details: [FILE](./.env). For the convinience and security, I will not upload the .env file to the remote repository.

@@ -1,0 +1,96 @@
+Apr 19 16:42:29 evilCarbonHQ systemd[1]: Starting Docker Socket for the API...
+Apr 19 16:42:29 evilCarbonHQ systemd[1]: Listening on Docker Socket for the API.
+
+
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.701145796+05:45" level=info msg="starting containerd" revision=77c84241c7cbdd9b4eca2591793e3d4f4317c590.m version=v2.2.3
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.719322928+05:45" level=info msg="loading plugin" id=io.containerd.content.v1.content type=io.containerd.content.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.720775890+05:45" level=info msg="loading plugin" id=io.containerd.image-verifier.v1.bindir type=io.containerd.image-verifier.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.720862585+05:45" level=info msg="loading plugin" id=io.containerd.internal.v1.opt type=io.containerd.internal.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.721828667+05:45" level=info msg="loading plugin" id=io.containerd.warning.v1.deprecations type=io.containerd.warning.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.721884112+05:45" level=info msg="loading plugin" id=io.containerd.mount-handler.v1.erofs type=io.containerd.mount-handler.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.721908088+05:45" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.blockfile type=io.containerd.snapshotter.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.722186933+05:45" level=info msg="skip loading plugin" error="no scratch file generator: skip plugin" id=io.containerd.snapshotter.v1.blockfile type=io.containerd.snapshotter.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.722251747+05:45" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.btrfs type=io.containerd.snapshotter.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.722547880+05:45" level=info msg="skip loading plugin" error="path /var/lib/containerd/io.containerd.snapshotter.v1.btrfs (ext4) must be a btrfs filesystem to be used with the btrfs snapshotter: skip plugin" id=io.containerd.snapshotter.v1.btrfs type=io.containerd.snapshotter.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.722593647+05:45" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.devmapper type=io.containerd.snapshotter.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.722614346+05:45" level=info msg="skip loading plugin" error="devmapper not configured: skip plugin" id=io.containerd.snapshotter.v1.devmapper type=io.containerd.snapshotter.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.722627301+05:45" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.erofs type=io.containerd.snapshotter.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.723176174+05:45" level=info msg="skip loading plugin" error="EROFS unsupported, please `modprobe erofs`: skip plugin" id=io.containerd.snapshotter.v1.erofs type=io.containerd.snapshotter.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.723223754+05:45" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.native type=io.containerd.snapshotter.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.723506302+05:45" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.overlayfs type=io.containerd.snapshotter.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.723951002+05:45" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.zfs type=io.containerd.snapshotter.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.724028319+05:45" level=info msg="skip loading plugin" error="lstat /var/lib/containerd/io.containerd.snapshotter.v1.zfs: no such file or directory: skip plugin" id=io.containerd.snapshotter.v1.zfs type=io.containerd.snapshotter.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.724045081+05:45" level=info msg="loading plugin" id=io.containerd.event.v1.exchange type=io.containerd.event.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.724108742+05:45" level=info msg="loading plugin" id=io.containerd.monitor.task.v1.cgroups type=io.containerd.monitor.task.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.726531554+05:45" level=info msg="loading plugin" id=io.containerd.metadata.v1.bolt type=io.containerd.metadata.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.726621976+05:45" level=info msg="metadata content store policy set" policy=shared
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.767519207+05:45" level=info msg="loading plugin" id=io.containerd.gc.v1.scheduler type=io.containerd.gc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.767625188+05:45" level=info msg="loading plugin" id=io.containerd.nri.v1.nri type=io.containerd.nri.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.767680213+05:45" level=info msg="built-in NRI default validator is disabled"
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.767701143+05:45" level=info msg="runtime interface created"
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.767718766+05:45" level=info msg="created NRI interface"
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.767743142+05:45" level=info msg="loading plugin" id=io.containerd.differ.v1.erofs type=io.containerd.differ.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.768132337+05:45" level=info msg="skip loading plugin" error="failed to check mkfs.erofs availability: failed to run mkfs.erofs --help: exec: \"mkfs.erofs\": executable file not found in $PATH: skip plugin" id=io.containerd.differ.v1.erofs type=io.containerd.differ.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.768186239+05:45" level=info msg="loading plugin" id=io.containerd.mount-manager.v1.bolt type=io.containerd.mount-manager.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.768581220+05:45" level=info msg="loading plugin" id=io.containerd.differ.v1.walking type=io.containerd.differ.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.768636485+05:45" level=info msg="loading plugin" id=io.containerd.lease.v1.manager type=io.containerd.lease.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.768658086+05:45" level=info msg="loading plugin" id=io.containerd.service.v1.containers-service type=io.containerd.service.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.768676060+05:45" level=info msg="loading plugin" id=io.containerd.service.v1.content-service type=io.containerd.service.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.768687963+05:45" level=info msg="loading plugin" id=io.containerd.service.v1.diff-service type=io.containerd.service.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.768742497+05:45" level=info msg="loading plugin" id=io.containerd.service.v1.images-service type=io.containerd.service.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.768839431+05:45" level=info msg="loading plugin" id=io.containerd.service.v1.introspection-service type=io.containerd.service.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.768852205+05:45" level=info msg="loading plugin" id=io.containerd.service.v1.namespaces-service type=io.containerd.service.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.768863587+05:45" level=info msg="loading plugin" id=io.containerd.service.v1.snapshots-service type=io.containerd.service.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.768890087+05:45" level=info msg="loading plugin" id=io.containerd.shim.v1.manager type=io.containerd.shim.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.768965611+05:45" level=info msg="loading plugin" id=io.containerd.runtime.v2.task type=io.containerd.runtime.v2
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769082523+05:45" level=info msg="loading plugin" id=io.containerd.service.v1.tasks-service type=io.containerd.service.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769106178+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.containers type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769119754+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.content type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769131236+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.diff type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769142628+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.events type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769152787+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.images type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769173166+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.introspection type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769184136+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.leases type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769214865+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.mounts type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769226397+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.namespaces type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769239762+05:45" level=info msg="loading plugin" id=io.containerd.sandbox.store.v1.local type=io.containerd.sandbox.store.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769250683+05:45" level=info msg="loading plugin" id=io.containerd.transfer.v1.local type=io.containerd.transfer.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769274368+05:45" level=info msg="loading plugin" id=io.containerd.cri.v1.images type=io.containerd.cri.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769331276+05:45" level=info msg="Get image filesystem path \"/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs\" for snapshotter \"overlayfs\""
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769344231+05:45" level=info msg="Start snapshots syncer"
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.769913228+05:45" level=info msg="loading plugin" id=io.containerd.cri.v1.runtime type=io.containerd.cri.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.770689044+05:45" level=info msg="starting cri plugin" config="{\"containerd\":{\"defaultRuntimeName\":\"runc\",\"runtimes\":{\"runc\":{\"runtimeType\":\"io.containerd.runc.v2\",\"runtimePath\":\"\",\"PodAnnotations\":null,\"ContainerAnnotations\":null,\"options\":{\"BinaryName\":\"\",\"CriuImagePath\":\"\",\"CriuWorkPath\":\"\",\"IoGid\":0,\"IoUid\":0,\"NoNewKeyring\":false,\"Root\":\"\",\"ShimCgroup\":\"\",\"SystemdCgroup\":false},\"privileged_without_host_devices\":false,\"privileged_without_host_devices_all_devices_allowed\":false,\"cgroupWritable\":false,\"baseRuntimeSpec\":\"\",\"cniConfDir\":\"\",\"cniMaxConfNum\":0,\"snapshotter\":\"\",\"sandboxer\":\"podsandbox\",\"io_type\":\"\"}},\"ignoreBlockIONotEnabledErrors\":false,\"ignoreRdtNotEnabledErrors\":false},\"cni\":{\"binDir\":\"\",\"binDirs\":[\"/opt/cni/bin\"],\"confDir\":\"/etc/cni/net.d\",\"maxConfNum\":1,\"setupSerially\":false,\"confTemplate\":\"\",\"ipPref\":\"\",\"useInternalLoopback\":false},\"enableSelinux\":false,\"selinuxCategoryRange\":1024,\"maxContainerLogLineSize\":16384,\"disableApparmor\":false,\"restrictOOMScoreAdj\":false,\"disableProcMount\":false,\"unsetSeccompProfile\":\"\",\"tolerateMissingHugetlbController\":true,\"disableHugetlbController\":true,\"device_ownership_from_security_context\":false,\"ignoreImageDefinedVolumes\":false,\"netnsMountsUnderStateDir\":false,\"enableUnprivilegedPorts\":true,\"enableUnprivilegedICMP\":true,\"enableCDI\":true,\"cdiSpecDirs\":[\"/etc/cdi\",\"/var/run/cdi\"],\"drainExecSyncIOTimeout\":\"0s\",\"ignoreDeprecationWarnings\":null,\"containerdRootDir\":\"/var/lib/containerd\",\"containerdEndpoint\":\"/run/containerd/containerd.sock\",\"rootDir\":\"/var/lib/containerd/io.containerd.grpc.v1.cri\",\"stateDir\":\"/run/containerd/io.containerd.grpc.v1.cri\"}"
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.770828148+05:45" level=info msg="loading plugin" id=io.containerd.podsandbox.controller.v1.podsandbox type=io.containerd.podsandbox.controller.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.771666682+05:45" level=info msg="loading plugin" id=io.containerd.sandbox.controller.v1.shim type=io.containerd.sandbox.controller.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.771867824+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.sandbox-controllers type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.771935493+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.sandboxes type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.771961833+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.snapshots type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.771990137+05:45" level=info msg="loading plugin" id=io.containerd.streaming.v1.manager type=io.containerd.streaming.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.772010295+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.streaming type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.772028099+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.tasks type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.772054249+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.transfer type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.772074638+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.version type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.772090368+05:45" level=info msg="loading plugin" id=io.containerd.monitor.container.v1.restart type=io.containerd.monitor.container.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.772738410+05:45" level=info msg="loading plugin" id=io.containerd.tracing.processor.v1.otlp type=io.containerd.tracing.processor.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.772803404+05:45" level=info msg="skip loading plugin" error="skip plugin: tracing endpoint not configured" id=io.containerd.tracing.processor.v1.otlp type=io.containerd.tracing.processor.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.772829884+05:45" level=info msg="loading plugin" id=io.containerd.internal.v1.tracing type=io.containerd.internal.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.772865181+05:45" level=info msg="skip loading plugin" error="skip plugin: tracing endpoint not configured" id=io.containerd.internal.v1.tracing type=io.containerd.internal.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.772881402+05:45" level=info msg="loading plugin" id=io.containerd.ttrpc.v1.otelttrpc type=io.containerd.ttrpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.772926247+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.healthcheck type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.772959571+05:45" level=info msg="loading plugin" id=io.containerd.grpc.v1.cri type=io.containerd.grpc.v1
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.772976763+05:45" level=info msg="Connect containerd service"
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.773024354+05:45" level=info msg="using experimental NRI integration - disable nri plugin to prevent this"
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.776873012+05:45" level=error msg="failed to load cni during init, please check CRI plugin status before setting up network for pods" error="cni config load failed: no network config found in /etc/cni/net.d: cni plugin not initialized: failed to load cni config"
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.869153210+05:45" level=info msg="Start subscribing containerd event"
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.869646598+05:45" level=info msg="Start recovering state"
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.870952160+05:45" level=info msg="Start event monitor"
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.871010992+05:45" level=info msg="Start cni network conf syncer for default"
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.871037773+05:45" level=info msg="Start streaming server"
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.871069293+05:45" level=info msg="Registered namespace \"k8s.io\" with NRI"
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.871089241+05:45" level=info msg="runtime interface starting up..."
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.871106845+05:45" level=info msg="starting plugins..."
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.871137102+05:45" level=info msg="Synchronizing NRI (plugin) with current runtime state"
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.872144428+05:45" level=info msg=serving... address=/run/containerd/containerd.sock.ttrpc
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.872477050+05:45" level=info msg=serving... address=/run/containerd/containerd.sock
+Apr 19 16:43:03 evilCarbonHQ containerd[411]: time="2026-04-19T16:43:03.873417337+05:45" level=info msg="containerd successfully booted in 0.173927s"
+Apr 19 16:43:03 evilCarbonHQ systemd[1]: Started containerd container runtime.

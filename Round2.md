@@ -34,3 +34,11 @@ This is due to the fact that the script run and expects and input at runtime. Fo
 8. For this question, we will make a bash script that automatically run the build and test commands. We first make use of the shebang to tell that we will used bash as opposed to sh because bash has bashisms which might always come in handy and then we will clone a repo from Github to build it and test if the output is correct
 
 9. We will create a .env file to keep our secrets and we will use python-dotenv to access it securely and validate some responses. For more details: [FILE](./.env). For the convinience and security, I will not upload the .env file to the remote repository.
+
+10. For, question 10, we use run of the mill example of how Nginx can be setup for a reverse proxy. This load balancer will help reduce load of our application. Similar to how kubeapi-endpoint does. For further details: [NGINX Config](./nginx.conf). Assume that the application is in port 8080 and the server is listening at port 80.
+
+12. For question, we use journalctl to evaluate why `sudo systemctl start docker.socket` runs quickly and `sudo systemctl start docker.service` run slowly. This is a synchronous behaviour that hampers me as a developer that is trying to run my microservices. As it turns out from the logs, the network connection failure in containerd is causing the downtime and hence, we should always stop containers from autostarting when loging in the system
+
+13. For question 13, we use our previous Docker image with simple name calling application and try to analyze it logs. We use `docker logs -f vigilant_turing`. It quits immediately after failing to acquire the stdin from the user.
+
+14. The web page has been deployed. Due to time constraints, a fully fledged application push could not be done. Here is the link for the [webpage](https://moonlit-babka-b6f07c.netlify.app/)

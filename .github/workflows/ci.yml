@@ -1,0 +1,26 @@
+name: CI Workflow to build simple C++ application
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-ubuntu-latest
+
+    steps:
+      - name: Repo setup
+        uses: actions/checkout@v4
+      
+      - name: Install gcc
+        run: sudo apt-get install gcc
+      
+      - name: Redirect stdout
+        run: gcc ./CalongWithCI/test.cpp > result
+      
+      - name: Test
+        run: | 
+          if grep -q "Hello, this is a test for CI workflow" results; then
+            echo "Test Passed"
+          else
+            echo "Test Failed"
+          fi
+

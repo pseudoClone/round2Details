@@ -25,4 +25,6 @@ Traceback (most recent call last):
 EOFError: EOF when reading a line
 ```
 
-This is due to the fact that the script run and expects and input at runtime. For our case, we can avoid this by using environment variables to get the input from command line itself.
+This is due to the fact that the script run and expects and input at runtime. For our case, we can avoid this by using environment variables to get the input from command line itself. However, since the container does start, we will ignore this since, the application logic is out of the scope.
+
+6. For question 6, the [docker-compose.yml](.\docker-compose.yml) has a compose configuration for a three tier application with a backend and a frontend and a Postgres database using the Postgres image; Alpine based. With this the size is reduced and the application is good to go.

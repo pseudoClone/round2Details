@@ -1,0 +1,53 @@
+services:
+
+  backend:
+    container_name: backend_container
+    build: ./backend
+    restart: always
+    ports:
+      - "8080:8080"
+    networks:
+      - application_network
+    environment:
+      - DB_USER=azaam
+      - DB_PASSWORD=nishaan
+      - DB_DATABSE=database
+    volumes:
+      - ./django-data:/django
+
+  frontend:
+    container_name: frontend_container
+    build: ./frontend
+    environment:
+      - API_URL=http://backend:8080
+    restart: always
+    ports:
+      - "3000:3000"
+    networks:
+      - application_network
+    depends_on:
+      - backend
+
+  database:
+    image: postgres:17.9-alpine3.22
+    container_name: db_container
+    restart: always
+    ports:
+      - "4000:5432"
+    networks:
+      - application_network
+    environment:
+      - POSTGRES_USER=azaam
+      - POSTGRES_PASSWORD=nishaan
+      - POSTGRES_DB=tablesx
+    volumes:
+      - postgres_data:/var/lib/postgres/data
+
+
+networks:
+  application_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  

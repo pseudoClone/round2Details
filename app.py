@@ -1,7 +1,7 @@
 # import flask
 def main():
         name = input("Enter your name: ")
-        age = int(input("Enter your age: "))
-        return "Hello " + name + " " + str(age)
+        agey = int(input("Enter your age: "))
+        return "Hello " + name + " " + str(agey)
 if __name__ == "__main__":
         print(main())
